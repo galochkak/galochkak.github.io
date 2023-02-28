@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap'); /*дополнительный шрифт*/
+
+
+body {
+    font-family: Michroma, serif; /*новое семейство шрифтов*/
+    background: linear-gradient(90deg, #00009c 0%, #0a0a0a 100%);
+}
+
+p {
+    color: aquamarine;
+}
+.nav-link { /*цвет Pricing*/
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active { /*цвет Home*/
+    color: rgb(143, 142, 142);
+}
+
+/*col-lg-4 - это; col-md-6 это..; mt-4(mergin top) -это отступ между карточками товаров*/
+.navbar-brand img{ /*логотип*/
+width: 40px;
+}
+
+.navbar-toggler { /*нав. панель(бургер)*/
+    background-color: rgb(143, 142, 142);
+}
+
+.sidebar {
+color: aqua;
+background: linear-gradient(270deg, #00009c 0%, #0a0a0a 100%);
+/*col-lg-3 col-md-12 навигационная боковая панель*/
+/*my-4 - это отступ от самого верха боковой панели в ровень с картинкой и между параграфами*/
+/*px-2 - это отступ в боковой панели с лева и с права*/
+}
+
+.card { /*Изменение цвета подложки карточки товаров*/
+    background: linear-gradient(270deg, #00009c 0%, #0a0a0a 100%);
+    
+}
+
+.card a {
+    text-decoration: none; /*убираем подчеркивание текста в карточке товара*/
+    color: aquamarine; /*Изменение букв под карточками товаров*/
+}
+
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto; /*разделенный пополам слайд ставит описание по центру с права*/
+}
+
+footer,
+.btn-outline-primary {
+background: linear-gradient(270deg, #00009c 0%, #0a0a0a 100%);
+}
+
+.media-links { /*центрируем в подвале значки телеграма и ютуба*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim { /*анимация телефона*/
+    animation: m 2s ease 0s infinite normal forwards;
+}
+
+@keyframes m {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .corousel-indicators {
+        display: none;
+    }
+}

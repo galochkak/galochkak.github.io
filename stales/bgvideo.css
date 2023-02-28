@@ -1,0 +1,36 @@
+.bgvideo {
+    height: 70vh; /*высота видео на гл. странице*/
+    width: 100%; /*ширина видео на гл. странице*/
+    position: relative;
+    display: flex;
+    justify-content: center; /*центрование надписи на видео*/
+    align-items: center; /*центрование надписи на видео*/
+
+}
+
+.bgvideo video {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.effect {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+
+.video-text {
+    color: aquamarine;
+    z-index: 2;
+}
